@@ -8,7 +8,7 @@ using Windows.UI.Xaml;
 namespace XperiAndri.Interactivity
 {
     /// <summary>
-    /// Represents a trigger that performs actions when orientaion of the device have changed. 
+    /// Represents a trigger that performs actions when orientation of the device changes. 
     /// </summary>
     public class OrientationTrigger : TriggerBase<FrameworkElement>
     {

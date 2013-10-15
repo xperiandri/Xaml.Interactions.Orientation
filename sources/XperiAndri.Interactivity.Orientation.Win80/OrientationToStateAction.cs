@@ -13,8 +13,8 @@ namespace XperiAndri.Interactivity
     
     //[DefaultTrigger(typeof(UIElement), typeof(OrientationTrigger), null)]
     /// <summary>
-    /// An action that will transition a FrameworkElement to a specified VisualStates depending on
-    /// devicу orientation.
+    /// An action that will transition a FrameworkElement to a specified VisualStates depending on current
+    /// application view state.
     /// </summary>
     /// <remarks>
     /// If the TargetName property is set, this action will attempt to change the state of the targeted element. 
@@ -25,35 +25,63 @@ namespace XperiAndri.Interactivity
     {
         #region DependencyProperties
 
-        #region UseTransitions
+        //#region UseTransitions
 
-        public static readonly DependencyProperty UseTransitionsProperty = DependencyProperty.Register("UseTransitions", typeof(bool), typeof(OrientationToStateAction), new PropertyMetadata(true));
+        ///// <summary>
+        ///// Identifies the
+        ///// <see cref="P:XperiAndri.Interactivity.OrientationToStateAction.UseTransitions" />
+        ///// dependency property.
+        ///// </summary>
+        ///// <value>
+        ///// The identifier for the
+        ///// <see cref="P:XperiAndri.Interactivity.OrientationToStateAction.UseTransitions" />
+        ///// dependency property.
+        ///// </value>
+        //public static readonly DependencyProperty UseTransitionsProperty = DependencyProperty.Register("UseTransitions", typeof(bool), typeof(OrientationToStateAction), new PropertyMetadata(true));
 
-        /// <summary>
-        /// Determines whether or not to use a VisualTransition to transition between states.
-        /// </summary>
-        public bool UseTransitions
-        {
-            get
-            {
-                return (bool)GetValue(UseTransitionsProperty);
-            }
-            set
-            {
-                SetValue(UseTransitionsProperty, value);
-            }
-        }
+        ///// <summary>
+        ///// Determines whether or not to use a <see cref="T:System.Windows.VisualTransition"/> 
+        ///// to transition between states.
+        ///// </summary>
+        ///// <value>
+        ///// True if Use a <see cref="T:System.Windows.VisualTransition"/> to transition 
+        ///// between states; otherwise false. Default value is true. 
+        ///// </value>
+        //public bool UseTransitions
+        //{
+        //    get
+        //    {
+        //        return (bool)GetValue(UseTransitionsProperty);
+        //    }
+        //    set
+        //    {
+        //        SetValue(UseTransitionsProperty, value);
+        //    }
+        //}
 
-        #endregion UseTransitions
+        //#endregion UseTransitions
 
         #region FullScreenLandscapeStateName
 
+        /// <summary>
+        /// Identifies the
+        /// <see cref="P:XperiAndri.Interactivity.OrientationToStateAction.FullScreenLandscapeStateName" />
+        /// dependency property.
+        /// </summary>
+        /// <value>
+        /// The identifier for the
+        /// <see cref="P:XperiAndri.Interactivity.OrientationToStateAction.FullScreenLandscapeStateName" />
+        /// dependency property.
+        /// </value>
         public static readonly DependencyProperty FullScreenLandscapeStateNameProperty = DependencyProperty.Register("FullScreenLandscapeStateName", typeof(string), typeof(OrientationToStateAction), new PropertyMetadata(default(string)));
 
         //[CustomPropertyValueEditor(CustomPropertyValueEditor.StateName)]
         /// <summary>
-        /// The name of the full screen landscape VisualState.
+        /// Gets or sets the name of the full screen landscape VisualState.
         /// </summary>
+        /// <value>
+        /// The name of the full screen landscape VisualState.
+        /// </value>
         public string FullScreenLandscapeStateName
         {
             get
@@ -70,12 +98,25 @@ namespace XperiAndri.Interactivity
 
         #region FullScreenPortraitStateName
 
+        /// <summary>
+        /// Identifies the
+        /// <see cref="P:XperiAndri.Interactivity.OrientationToStateAction.FullScreenPortraitStateName" />
+        /// dependency property.
+        /// </summary>
+        /// <value>
+        /// The identifier for the
+        /// <see cref="P:XperiAndri.Interactivity.OrientationToStateAction.FullScreenPortraitStateName" />
+        /// dependency property.
+        /// </value>
         public static readonly DependencyProperty FullScreenPortraitStateNameProperty = DependencyProperty.Register("FullScreenPortraitStateName", typeof(string), typeof(OrientationToStateAction), new PropertyMetadata(default(string)));
 
         //[CustomPropertyValueEditor(CustomPropertyValueEditor.StateName)]
         /// <summary>
-        /// The name of the full screen portrait VisualState.
+        /// Gets or sets the name of the full screen portrait VisualState.
         /// </summary>
+        /// <value>
+        /// The name of the full screen portrait VisualState.
+        /// </value>
         public string FullScreenPortraitStateName
         {
             get
@@ -92,12 +133,25 @@ namespace XperiAndri.Interactivity
 
         #region FilledStateName
 
+        /// <summary>
+        /// Identifies the
+        /// <see cref="P:XperiAndri.Interactivity.OrientationToStateAction.FilledStateName" />
+        /// dependency property.
+        /// </summary>
+        /// <value>
+        /// The identifier for the
+        /// <see cref="P:XperiAndri.Interactivity.OrientationToStateAction.FilledStateName" />
+        /// dependency property.
+        /// </value>
         public static readonly DependencyProperty FilledStateNameProperty = DependencyProperty.Register("FilledStateName", typeof(string), typeof(OrientationToStateAction), new PropertyMetadata(default(string)));
 
         //[CustomPropertyValueEditor(CustomPropertyValueEditor.StateName)]
         /// <summary>
-        /// The name of the filled VisualState.
+        /// Gets or sets the name of the filled VisualState.
         /// </summary>
+        /// <value>
+        /// The name of the filled VisualState.
+        /// </value>
         public string FilledStateName
         {
             get
@@ -114,12 +168,25 @@ namespace XperiAndri.Interactivity
 
         #region SnappedStateName
 
+        /// <summary>
+        /// Identifies the
+        /// <see cref="P:XperiAndri.Interactivity.OrientationToStateAction.SnappedStateName" />
+        /// dependency property.
+        /// </summary>
+        /// <value>
+        /// The identifier for the
+        /// <see cref="P:XperiAndri.Interactivity.OrientationToStateAction.SnappedStateName" />
+        /// dependency property.
+        /// </value>
         public static readonly DependencyProperty SnappedStateNameProperty = DependencyProperty.Register("SnappedStateName", typeof(string), typeof(OrientationToStateAction), new PropertyMetadata(default(string)));
 
         //[CustomPropertyValueEditor(CustomPropertyValueEditor.StateName)]
         /// <summary>
-        /// The name of the snapped VisualState.
+        /// Gets or sets the name of the snapped VisualState.
         /// </summary>
+        /// <value>
+        /// The name of the snapped VisualState.
+        /// </value>
         public string SnappedStateName
         {
             get
@@ -150,6 +217,13 @@ namespace XperiAndri.Interactivity
 
         #endregion Properties
 
+        /// <summary>
+        /// Invokes the action.
+        /// </summary>
+        /// <param name="parameter">
+        /// New application view state of type 
+        /// <see cref="T:Windows.UI.ViewManagement.ApplicationViewState"/>.
+        /// </param>
         protected override void Invoke(object parameter)
         {
             if (this.StateTarget != null && Enum.IsDefined(typeof(ApplicationViewState), parameter))
@@ -183,7 +257,8 @@ namespace XperiAndri.Interactivity
                 if (string.IsNullOrEmpty(stateName))
                     stateName = viewState.ToString();
 
-                VisualStateUtilities.GoToState(this.StateTarget, stateName, this.UseTransitions);
+                //VisualStateUtilities.GoToState(this.StateTarget, stateName, this.UseTransitions);
+                VisualStateUtilities.GoToState(this.StateTarget, stateName, false);
 
                 //Control stateTarget = this.StateTarget as Control;
                 //if (stateTarget != null)
@@ -198,6 +273,11 @@ namespace XperiAndri.Interactivity
             }
         }
 
+        /// <summary>
+        /// Called when the target property changes.
+        /// </summary>
+        /// <param name="oldTarget">The old target.</param>
+        /// <param name="newTarget">The new target.</param>
         protected override void OnTargetChanged(FrameworkElement oldTarget, FrameworkElement newTarget)
         {
             base.OnTargetChanged(oldTarget, newTarget);

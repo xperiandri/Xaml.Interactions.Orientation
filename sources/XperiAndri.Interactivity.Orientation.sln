@@ -1,15 +1,24 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XperiAndri.Interactivity.Orientation.SketchFlow", "XperiAndri.Interactivity.Orientation.SketchFlow\XperiAndri.Interactivity.Orientation.SketchFlow.csproj", "{3CFC9B12-41C4-48B2-BDA7-88F3A6A0BFF3}"
-EndProject
+# Visual Studio 2013
+VisualStudioVersion = 12.0.20617.1 PREVIEW
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SketchFlow", "SketchFlow", "{EF63608A-ADDC-45B4-96B9-A1C65537A239}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Phone7", "Phone7", "{5CD4462C-CC9A-43F9-909D-8F5EC4287BED}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Phone8", "Phone8", "{59B9B53D-C1BD-41CE-988D-718FB7F56FB9}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Store", "Store", "{EC6A5359-3C7E-4741-80C0-5280A033C649}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Win80", "Win80", "{EC6A5359-3C7E-4741-80C0-5280A033C649}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{3B7414D0-87C6-45CC-BFB2-34FCB1B2F359}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XperiAndri.Interactivity.Orientation.SketchFlow", "XperiAndri.Interactivity.Orientation.SketchFlow\XperiAndri.Interactivity.Orientation.SketchFlow.csproj", "{3CFC9B12-41C4-48B2-BDA7-88F3A6A0BFF3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XperiAndri.Interactivity.Orientation.Phone7", "XperiAndri.Interactivity.Orientation.Phone7\XperiAndri.Interactivity.Orientation.Phone7.csproj", "{926ABEE5-7386-4CE7-A283-415C06436282}"
 EndProject
@@ -19,9 +28,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XperiAndri.Interactivity.Or
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestPhoneApp.Phone8", "TestPhoneApp.Phone8\TestPhoneApp.Phone8.csproj", "{9C967657-682D-450E-8C6E-FD682DF6C3D2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XperiAndri.Interactivity.Orientation.Store", "XperiAndri.Interactivity.Orientation.Store\XperiAndri.Interactivity.Orientation.Store.csproj", "{C6DE076C-08E8-4DB6-8549-21F41DA06F96}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Win81", "Win81", "{70540B44-7026-44C7-B7CD-D91125F77AFD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApplication", "TestApplication\TestApplication.csproj", "{7CB73BC1-C9D5-49B0-97C6-F2D56C2309CA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XperiAndri.Interactivity.Orientation.Win80", "XperiAndri.Interactivity.Orientation.Win80\XperiAndri.Interactivity.Orientation.Win80.csproj", "{C6DE076C-08E8-4DB6-8549-21F41DA06F96}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApplication.Win80", "TestApplication.Win80\TestApplication.Win80.csproj", "{7CB73BC1-C9D5-49B0-97C6-F2D56C2309CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XperiAndri.Interactivity.Orientation.Win81", "XperiAndri.Interactivity.Orientation.Win81\XperiAndri.Interactivity.Orientation.Win81.csproj", "{21B120C1-C1C0-4F30-9A70-923DE68B8505}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApplication.Win81", "TestApplication.Win81\TestApplication.Win81.csproj", "{E0350753-A2B8-454D-A4E4-980153591D38}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -129,6 +144,46 @@ Global
 		{7CB73BC1-C9D5-49B0-97C6-F2D56C2309CA}.Release|x86.ActiveCfg = Release|x86
 		{7CB73BC1-C9D5-49B0-97C6-F2D56C2309CA}.Release|x86.Build.0 = Release|x86
 		{7CB73BC1-C9D5-49B0-97C6-F2D56C2309CA}.Release|x86.Deploy.0 = Release|x86
+		{21B120C1-C1C0-4F30-9A70-923DE68B8505}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21B120C1-C1C0-4F30-9A70-923DE68B8505}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21B120C1-C1C0-4F30-9A70-923DE68B8505}.Debug|ARM.ActiveCfg = Debug|ARM
+		{21B120C1-C1C0-4F30-9A70-923DE68B8505}.Debug|ARM.Build.0 = Debug|ARM
+		{21B120C1-C1C0-4F30-9A70-923DE68B8505}.Debug|x64.ActiveCfg = Debug|x64
+		{21B120C1-C1C0-4F30-9A70-923DE68B8505}.Debug|x64.Build.0 = Debug|x64
+		{21B120C1-C1C0-4F30-9A70-923DE68B8505}.Debug|x86.ActiveCfg = Debug|x86
+		{21B120C1-C1C0-4F30-9A70-923DE68B8505}.Debug|x86.Build.0 = Debug|x86
+		{21B120C1-C1C0-4F30-9A70-923DE68B8505}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21B120C1-C1C0-4F30-9A70-923DE68B8505}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21B120C1-C1C0-4F30-9A70-923DE68B8505}.Release|ARM.ActiveCfg = Release|ARM
+		{21B120C1-C1C0-4F30-9A70-923DE68B8505}.Release|ARM.Build.0 = Release|ARM
+		{21B120C1-C1C0-4F30-9A70-923DE68B8505}.Release|x64.ActiveCfg = Release|x64
+		{21B120C1-C1C0-4F30-9A70-923DE68B8505}.Release|x64.Build.0 = Release|x64
+		{21B120C1-C1C0-4F30-9A70-923DE68B8505}.Release|x86.ActiveCfg = Release|x86
+		{21B120C1-C1C0-4F30-9A70-923DE68B8505}.Release|x86.Build.0 = Release|x86
+		{E0350753-A2B8-454D-A4E4-980153591D38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0350753-A2B8-454D-A4E4-980153591D38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0350753-A2B8-454D-A4E4-980153591D38}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{E0350753-A2B8-454D-A4E4-980153591D38}.Debug|ARM.ActiveCfg = Debug|ARM
+		{E0350753-A2B8-454D-A4E4-980153591D38}.Debug|ARM.Build.0 = Debug|ARM
+		{E0350753-A2B8-454D-A4E4-980153591D38}.Debug|ARM.Deploy.0 = Debug|ARM
+		{E0350753-A2B8-454D-A4E4-980153591D38}.Debug|x64.ActiveCfg = Debug|x64
+		{E0350753-A2B8-454D-A4E4-980153591D38}.Debug|x64.Build.0 = Debug|x64
+		{E0350753-A2B8-454D-A4E4-980153591D38}.Debug|x64.Deploy.0 = Debug|x64
+		{E0350753-A2B8-454D-A4E4-980153591D38}.Debug|x86.ActiveCfg = Debug|x86
+		{E0350753-A2B8-454D-A4E4-980153591D38}.Debug|x86.Build.0 = Debug|x86
+		{E0350753-A2B8-454D-A4E4-980153591D38}.Debug|x86.Deploy.0 = Debug|x86
+		{E0350753-A2B8-454D-A4E4-980153591D38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0350753-A2B8-454D-A4E4-980153591D38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0350753-A2B8-454D-A4E4-980153591D38}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{E0350753-A2B8-454D-A4E4-980153591D38}.Release|ARM.ActiveCfg = Release|ARM
+		{E0350753-A2B8-454D-A4E4-980153591D38}.Release|ARM.Build.0 = Release|ARM
+		{E0350753-A2B8-454D-A4E4-980153591D38}.Release|ARM.Deploy.0 = Release|ARM
+		{E0350753-A2B8-454D-A4E4-980153591D38}.Release|x64.ActiveCfg = Release|x64
+		{E0350753-A2B8-454D-A4E4-980153591D38}.Release|x64.Build.0 = Release|x64
+		{E0350753-A2B8-454D-A4E4-980153591D38}.Release|x64.Deploy.0 = Release|x64
+		{E0350753-A2B8-454D-A4E4-980153591D38}.Release|x86.ActiveCfg = Release|x86
+		{E0350753-A2B8-454D-A4E4-980153591D38}.Release|x86.Build.0 = Release|x86
+		{E0350753-A2B8-454D-A4E4-980153591D38}.Release|x86.Deploy.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -141,6 +196,8 @@ Global
 		{9C967657-682D-450E-8C6E-FD682DF6C3D2} = {59B9B53D-C1BD-41CE-988D-718FB7F56FB9}
 		{C6DE076C-08E8-4DB6-8549-21F41DA06F96} = {EC6A5359-3C7E-4741-80C0-5280A033C649}
 		{7CB73BC1-C9D5-49B0-97C6-F2D56C2309CA} = {EC6A5359-3C7E-4741-80C0-5280A033C649}
+		{21B120C1-C1C0-4F30-9A70-923DE68B8505} = {70540B44-7026-44C7-B7CD-D91125F77AFD}
+		{E0350753-A2B8-454D-A4E4-980153591D38} = {70540B44-7026-44C7-B7CD-D91125F77AFD}
 	EndGlobalSection
 	GlobalSection(CodealikeProperties) = postSolution
 		SolutionGuid = 6ef21c9c-1483-4a10-9e1d-c3dae0ba07c1

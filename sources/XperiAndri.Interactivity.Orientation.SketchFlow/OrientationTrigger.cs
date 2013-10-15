@@ -22,6 +22,9 @@ namespace XperiAndri.Interactivity
     {
         private WindowsPhoneChrome chrome;
 
+        /// <summary>
+        /// Called after the trigger is attached to an AssociatedObject.
+        /// </summary>
         protected override void OnAttached()
         {
             base.OnAttached();
@@ -29,6 +32,9 @@ namespace XperiAndri.Interactivity
             AssociatedObject.Loaded += AssociatedObjectLoaded;
         }
 
+        /// <summary>
+        /// Called when the trigger is being detached from its AssociatedObject, but before it has actually occurred.
+        /// </summary>
         protected override void OnDetaching()
         {
             base.OnDetaching();

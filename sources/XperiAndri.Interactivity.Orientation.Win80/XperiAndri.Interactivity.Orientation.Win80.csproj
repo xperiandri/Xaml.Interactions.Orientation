@@ -21,20 +21,20 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\..\bin\Debug\store\</OutputPath>
+    <OutputPath>..\..\bin\Debug\win80\</OutputPath>
     <DefineConstants>DEBUG;TRACE;NETFX_CORE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>..\..\bin\Debug\store\XperiAndri.Interactivity.Orientation.XML</DocumentationFile>
+    <DocumentationFile>..\..\bin\Debug\win80\XperiAndri.Interactivity.Orientation.XML</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>..\..\bin\Release\store\</OutputPath>
+    <OutputPath>..\..\bin\Release\win80\</OutputPath>
     <DefineConstants>TRACE;NETFX_CORE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>..\..\bin\Release\store\XperiAndri.Interactivity.Orientation.XML</DocumentationFile>
+    <DocumentationFile>..\..\bin\Release\win80\XperiAndri.Interactivity.Orientation.XML</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
     <DebugSymbols>true</DebugSymbols>
@@ -117,7 +117,7 @@
     </Reference>
     <Reference Include="XperiAndri.Expression.Interactions, Version=3.0.30924.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\XperiAndri.Expression.Interactions.1.0.1\lib\netcore45\XperiAndri.Expression.Interactions.dll</HintPath>
+      <HintPath>..\packages\XperiAndri.Expression.Interactions.1.0.2\lib\netcore45\XperiAndri.Expression.Interactions.dll</HintPath>
     </Reference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0' ">
